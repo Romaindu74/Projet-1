@@ -148,32 +148,32 @@ class Logs {
     /**
      * @param {String} text 
      */
-    debug(text) {
-        this.p(1, text);
+    debug(...text) {
+        this.p(1, text.join(' '));
     }
     /**
      * @param {String} text 
      */
-    info(text) {
-        this.p(2, text);
+    info(...text) {
+        this.p(2, text.join(' '));
     }
     /**
      * @param {String} text 
      */
-    warning(text) {
-        this.p(3, text);
+    warning(...text) {
+        this.p(3, text.join(' '));
     }
     /**
      * @param {String} text 
      */
-    error(text) {
-        this.p(4, text);
+    error(...text) {
+        this.p(4, text.join(' '));
     }
     /**
      * @param {String} text 
      */
-    critical(text) {
-        this.p(5, text);
+    critical(...text) {
+        this.p(5, text.join(' '));
     }
 }
 
